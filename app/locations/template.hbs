@@ -1,0 +1,13 @@
+<h2> Locations: </h2>
+
+<ul>
+  {{#each model as |location| }}
+    {{#link-to 'location' location}}
+    <li>
+      {{location.address}}
+    </li>
+    {{/link-to}}
+  {{/each}}
+</ul>
+
+{{outlet}}

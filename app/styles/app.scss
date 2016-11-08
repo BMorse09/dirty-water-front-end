@@ -1,0 +1,26 @@
+@import 'bootstrap';
+@import 'bootstrap/theme';
+
+h1 {
+  color: 000000;
+  font-size: 60pt;
+}
+
+h2 {
+  color: 000000;
+  font-size: 35pt;
+  text-align: left;
+  text-decoration: underline;
+}
+
+h3 {
+  color: 000000;
+  font-size: 35pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
