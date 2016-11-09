@@ -1,0 +1,6 @@
+<form {{action 'create' on='submit'}}>
+  {{input type="text" class="add-review" value=review.content}}
+  {{input type="submit" value="Add Review" class="btn btn-primary"}}
+</form>
+
+<button class="btn btn-danger" {{action 'reset'}}>Cancel</button>

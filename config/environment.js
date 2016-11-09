@@ -1,7 +1,7 @@
 /* jshint node: true */
 
 module.exports = function (environment) {
-  'user strict';
+  'use strict';
   const ENV = {
     modulePrefix: 'dirty-water-front-end',
     environment: environment,

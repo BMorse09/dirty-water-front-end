@@ -2,7 +2,19 @@
 <ul>{{location.address}}</ul>
 </h3>
 
-<textarea rows="8" cols="130">
-</textarea>
+{{#each location.reviews as |review|}}
+  {{#if review}}
+    <p class="review-backdrop">{{review.content}}</p>
+    {{#if (currentUser isCurrentUser 2)}}
+      <button> DELETE </button>
+    {{else}}
+      <h1> FUCK</h1>
+    {{/if}}
+  {{else}}
+    <p>Sorry, but there are no reviews yet for this location. Please add one!</p>
+  {{/if}}
+{{/each}}
 
-<button type="button" class="btn btn-primary">Post</button>
+{{#link-to 'add-review' location class="btn btn-primary"}}
+  Add Review to {{location.address}}
+{{/link-to}}

@@ -24,3 +24,17 @@ form {
   margin: 0 auto;
   text-align: center;
 }
+
+.add-review{
+  width: 100%;
+  min-height: 100px;
+  margin: 20px 0px;
+}
+
+.review-backdrop {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(251, 251, 251, 1);
+  border-radius: 5px;
+}
