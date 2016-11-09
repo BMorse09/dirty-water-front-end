@@ -6,9 +6,7 @@
   {{#if review}}
     <p class="review-backdrop">{{review.content}}</p>
     {{#if (currentUser isCurrentUser 2)}}
-      <button> DELETE </button>
-    {{else}}
-      <h1> FUCK</h1>
+      <button {{action "delete" item}}> DELETE </button>
     {{/if}}
   {{else}}
     <p>Sorry, but there are no reviews yet for this location. Please add one!</p>
