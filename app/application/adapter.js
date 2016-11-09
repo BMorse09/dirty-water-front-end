@@ -4,7 +4,7 @@ import ActiveModelAdapter from 'active-model-adapter';
 import Ember from 'ember';
 
 export default ActiveModelAdapter.extend({
-  host: 'http://localhost:4741',
+  host: ENV.apiHost,
 
   auth: Ember.inject.service(),
 
