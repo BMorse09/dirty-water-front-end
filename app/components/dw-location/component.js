@@ -5,8 +5,8 @@ export default Ember.Component.extend({
   isCurrentUser: Ember.computed.alias('auth.credentials.id'),
 
   actions: {
-    deleteItem () {
-    return this.sendAction('deleteItem');
+    deleteItem (review) {
+    return this.sendAction('deleteItem', review);
       },
     },
   });

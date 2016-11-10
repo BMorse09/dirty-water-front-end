@@ -1,1 +1,9 @@
 <!-- <h3 class="location-header">{{title}}</h3> -->
+{{#if review}}
+  <p class="review-backdrop">{{review.content}}</p>
+  {{#if (currentUser isCurrentUser review.user.id)}}
+    <button {{action "deleteItem"}}> DELETE </button>
+  {{/if}}
+{{else}}
+  <p>Sorry, but there are no reviews yet for this location. Please add one!</p>
+{{/if}}
